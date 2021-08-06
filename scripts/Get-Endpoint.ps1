@@ -1,9 +1,8 @@
 param (
-    [Parameter(Mandatory=$true)][string]$Endpoint
+    [Parameter(Mandatory=$true)][string]$envendpoint
 )
 
-$envendpoint = ($Endpoint + "env.html")
-Write-Host $envendpoint
+Write-Host "Endpoint at: $envendpoint"
 $Request = (Invoke-WebRequest $envendpoint)
 If ($Request.Content -Match "IDENTITY") {
     Write-Host "Endpoint belongs to a managed identity"
