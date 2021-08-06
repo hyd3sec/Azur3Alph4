@@ -1,6 +1,6 @@
 # **Azur3Alph4**
 
-![alt text](https://github.com/hyd3sec/Azur3Alph4/resources/blob/main/azur3alph4.png?raw=true)
+![alt text](https://github.com/hyd3sec/Azur3Alph4/blob/main/resources/azur3alph4.png?raw=true)
 
 ## **About**
 ---
