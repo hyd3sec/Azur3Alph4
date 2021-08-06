@@ -12,3 +12,4 @@ $RequestParams = @{
 }
 #Need to test this
 $subscriptionID = (Invoke-RestMethod @RequestParams).value.subscriptionId
+Write-Host "Subscription ID found: $subscriptionID"
