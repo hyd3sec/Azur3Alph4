@@ -4,7 +4,7 @@
 
 ## **About**
 
-Azur3Alph4 is a PowerShell module that automates a lot of red-team tasks for ops on objective. This module situates in a post-breach (RCE achieved) position. Token extraction and many other tools will not execute successfully without starting in this position.
+Azur3Alph4 is a PowerShell module that automates red-team tasks for ops on objective. This module situates in a post-breach (RCE achieved) position. Token extraction and many other tools will not execute successfully without starting in this position.
 This module should be used for further enumeration and movement in a compromised app that is part of a managed identity.  
 Azur3Alph4 is currently in development. Modules are being worked on and updated. Most of this is still untested.
 
