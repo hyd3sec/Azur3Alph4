@@ -5,7 +5,7 @@ _  ___ |_  /_/ /_/ /_  /   ____/ /_  ___ |  / __  /_/ /  / / /__  __/
 /_/  |_|____/\__,_/ /_/    /____/ /_/  |_/_/  _  .___//_/ /_/  /_/   
                                               /_/                    
 "
-Write-Host "Author: Adeeb Shah - [@hyd3sec] | github.com/hyd3sec
+Write-Host "Author: Adeeb Shah - [@hyd3sec] | [github.com/hyd3sec]
 "
 function Connect-AzAccount
 {
