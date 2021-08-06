@@ -1,6 +1,6 @@
 # **Azur3Alph4**
 
-![alt text](https://github.com/hyd3sec/Azur3Alph4/blob/main/azur3alph4.png?raw=true)
+![alt text](https://github.com/hyd3sec/Azur3Alph4/resources/blob/main/azur3alph4.png?raw=true)
 
 ## **About**
 ---
@@ -11,6 +11,9 @@ Azur3Alph4 is currently in development. Modules are being worked on and updated.
 
 Scripts are in repo for individual use and easy identification, but the .psm1 file is what will be consistently updated.
 
+## **Installation**
+---
+`Import-Module Azur3Alph4`
 
 ## **Updates - 8/5/2021**
 ---
