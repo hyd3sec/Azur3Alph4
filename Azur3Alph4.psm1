@@ -23,10 +23,9 @@ Connect-AzureAD -Credential $creds
 function Get-Endpoint
 {
     param (
-    [Parameter(Mandatory=$true)][string]$Endpoint
+    [Parameter(Mandatory=$true)][string]$envendpoint
 )
 
-$envendpoint = ($Endpoint + "env.html")
 $Request = (Invoke-WebRequest $envendpoint)
 If ($Request.Content -Match "IDENTITY") {
     Write-Host "Endpoint belongs to a managed identity"
@@ -39,10 +38,9 @@ Else {
 function Get-ManagedIdentityToken 
 {
     param (
-        [Parameter(Mandatory=$true)][string]$Endpoint
+        [Parameter(Mandatory=$true)][string]$envendpoint
     )
     
-    $envendpoint = ($Endpoint + "env.html")
     $Request = (Invoke-WebRequest $envendpoint)
     $Response = $Request.Content
     If ($Response -Match "IDENTITY") {

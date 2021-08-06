@@ -10,8 +10,9 @@ Azur3Alph4 is currently in development. Modules are being worked on and updated.
 
 Scripts are in repo for individual use and easy identification, but the .psm1 file is what will be consistently updated.
 
-## **Installation**
+## **Installation & Usage**
 `Import-Module Azur3Alph4`
+Point the $envendpoint to cmd execution passing "env" to the Azure backend.
 
 ## **Updates - 8/5/2021**
 
