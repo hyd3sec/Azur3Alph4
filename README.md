@@ -15,6 +15,10 @@ Scripts are in repo for individual use and easy identification, but the .psm1 fi
 
 Point the $envendpoint to cmd execution passing "env" to the Azure backend.
 
+## **Updates - 8/10/2021**
+- Added Get-ResourceActions.ps1 and updated Azur3Alph4.psm1
+
+
 ## **Updates - 8/5/2021**
 
 - Made Azur3Alph4 modular
@@ -32,26 +36,30 @@ Point the $envendpoint to cmd execution passing "env" to the Azure backend.
 
 #### **Get-Endpoint**
 
-Enumerates an Azure endpoint to verify whether or not it belongs to a managed identity.
+Enumerates an Azure endpoint to verify whether or not it belongs to a managed identity
 
 #### **Get-ManagedIdentityToken**
 
-Grabs the Managed Identity Token from the endpoint using the extracted secret. Stores the value in a given variable.
+Grabs the Managed Identity Token from the endpoint using the extracted secret. Stores the value in a given variable
 
 #### **Connect-AzAccount**
 
-Takes a username and password variable and automates SecureString conversion and connects to an Azure account.
+Takes a username and password variable and automates SecureString conversion and connects to an Azure account
 
 #### **Get-SubscriptionId**
 
-Gets the subscription ID using the REST API for Azure.
+Gets the subscription ID using the REST API for Azure
 
 #### **Get-ManagedIdentityResources**
 
-Uses the subscription ID to enumerate all resources that are accessible.
+Uses the subscription ID to enumerate all resources that are accessible
+
+#### **Get-ResourceActions.ps1**
+
+Enumerates all resources available using Azure token and lists permissions of each resource directly below it
 
 ## **Credits**
 
-- Big shout out to @nikhil_mitt for the CARTP course that got me started in Azure.
+- Big shout out to @nikhil_mitt for the CARTP course that got me started in Azure
 
 
